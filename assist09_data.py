@@ -171,7 +171,7 @@ class DataProcess:
 
         # generate input data using template_id
         get_train_test_template(train_or_test)
-
+        
     def get_ques_skill_mat(self):
         df = pd.read_csv(os.path.join(self.save_folder, 'graph', 'ques_skill.csv'))
         num_ques, num_skill = df['ques'].max() + 1, df['skill'].max() + 1
